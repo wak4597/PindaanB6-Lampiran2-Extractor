@@ -11,10 +11,11 @@ from docx.enum.text import WD_ALIGN_PARAGRAPH
 
 # --- Formatting Constants ---
 BOLD_TERMS = [
-    r"diperakui dengan terma atau syarat",
-    r"diperakui",
-    r"tidak dapat dipertimbangkan",
-    r"kepada"
+    r"Diperakui dengan terma atau syarat",
+    r"Diperakui",
+    r"Tidak dapat dipertimbangkan",
+    r"kepada",
+    r"Butiran Peluasan atau Pengubahan
 ]
 
 CUSTOM_ENGLISH_WORDS = {
@@ -33,7 +34,23 @@ CUSTOM_ENGLISH_WORDS = {
     "filing", "first", "floor", "focused", "food", "for", "four", "four-bedded", "fourth", "function", "gamma", "gas", "gastroenterology", "gateway", "general", "grievance",
     "grill", "grilled", "ground", "gym", "gymnasium", "gynaecology", "haemodialysis", "hall", "hand", "hdu", "head", "health", "high", "hold", "holding", "home", "homemaker",
     "hospice", "hospital", "hot", "hybrid", "icu", "imaging", "in", "infectious", "inhouse", "inpatient", "intensity", "intensive", "intermediate", "international", "intra",
-    "intraoperative", "isolation", "it", "janitor", "janitor's", "joint", "kitchen", "knife", "lab", "laboratory", "labour", "laser", "ldr", "level", "licensed", "lift", "linear", "linen", "link", "lobby", "local", "locker", "lounge", "lower", "lung", "machine", "machines", "major", "male", "mall", "mammogram", "mammography", "management", "manager", "maternal", "maternity", "matron", "maxillofacial", "medical", "medication", "medicine", "meeting", "mezzanine", "mineral", "minor", "mobile", "multidisiplin", "multipurpose", "negative", "nephrologist", "nephrology", "nerve", "neurology", "new", "ninth", "non-hepatitis", "nurse", "nursery", "nursing", "observation", "obstetrics", "occupational", "of", "off", "office", "officers", "oncology", "open", "operating", "operation", "ophthalmology", "optometrist", "optometry", "oral", "orthopaedic", "outpatient", "outsourced", "over", "packing", "paediatric", "paediatrician", "paediatrics", "paeds", "palliative", "pantry", "paraffin", "park", "pass", "patient", "pediatric", "pendant", "pharmacy", "phlebotomy", "physical", "physician's", "physio", "physiotherapy", "plastic", "play", "portable", "positive", "pre-function", "pre-operating", "prep", "preparation", "pressure", "private", "procedure", "processing", "psychiatry", "public", "quarantine", "radiation", "radiography", "radiologist", "radiology", "radiotherapy", "readily", "receiving", "reception", "reconstitution", "record", "recovery", "refraction", "refuge", "registration", "rehab", "rehabilitation", "relokasi", "reporting", "reprocessor", "reproductive", "respiratory", "respite", "resusitasi", "retail", "robotic", "room", "rooming-in", "rooms", "sample", "satellite", "scanner", "scientific", "scn", "scope", "screen", "screening", "second", "sensory", "serum", "server", "services", "settlement", "seventh", "silent", "simulator", "single", "single-bedded", "sister", "sixth", "sleep", "sluice", "society", "soiled", "special", "specialist", "specialists", "speech", "splinting", "sports", "staff", "stair", "station", "sterilization", "storage", "store", "stress", "stretcher", "study", "sub", "suite", "supervisor", "supply", "support", "surgery", "surgical", "table", "taking", "tea", "teaching", "technical", "tenth", "test", "theatre", "therapy", "third", "three", "three-bedded", "times", "to", "toilet", "topical", "tower", "traction", "training", "treadmill", "treadmills", "treatment", "triage", "trolley", "ultrasound", "uro-gynaecology", "uroflowmetry", "utility", "vacant", "vascular", "vertigo", "vestibular", "vision", "visiting", "visitor", "visual", "volunteer", "wait", "waiting", "ward", "waste", "wax", "wheelchair", "wing", "with", "women's", "work", "x-ray", "airlock", "auditory", "autologous", "baby", "basis", "brainstem", "breast", "cancers", "cell", "chamber", "clinically", "committee", "disabled", "electrophysiology", "endocrine", "enhancement", "ethical", "execute", "formula", "green", "hearing", "hyperbaric", "immune", "institutional", "main", "marketing", "multiplace", "nourishment", "only", "oxygen", "policies", "procedures", "progress", "protocol", "proven", "psychiatric", "ramp", "red", "response", "standard", "stem", "therapeutic", "trial", "value", "wardrobe", "yellow", "zone", "gynae-oncology", "pet/ct", "spect/ct/pet"
+    "intraoperative", "isolation", "it", "janitor", "janitor's", "joint", "kitchen", "knife", "lab", "laboratory", "labour", "laser", "ldr", "level", "licensed", "lift", "linear",
+    "linen", "link", "lobby", "local", "locker", "lounge", "lower", "lung", "machine", "machines", "major", "male", "mall", "mammogram", "mammography", "management", "manager", "maternal",
+    "maternity", "matron", "maxillofacial", "medical", "medication", "medicine", "meeting", "mezzanine", "mineral", "minor", "mobile", "multidisiplin", "multipurpose", "negative", "nephrologist",
+    "nephrology", "nerve", "neurology", "new", "ninth", "non-hepatitis", "nurse", "nursery", "nursing", "observation", "obstetrics", "occupational", "of", "off", "office", "officers", "oncology",
+    "open", "operating", "operation", "ophthalmology", "optometrist", "optometry", "oral", "orthopaedic", "outpatient", "outsourced", "over", "packing", "paediatric", "paediatrician", "paediatrics",
+    "paeds", "palliative", "pantry", "paraffin", "park", "pass", "patient", "pediatric", "pendant", "pharmacy", "phlebotomy", "physical", "physician's", "physio", "physiotherapy", "plastic", "play",
+    "portable", "positive", "pre-function", "pre-operating", "prep", "preparation", "pressure", "private", "procedure", "processing", "psychiatry", "public", "quarantine", "radiation", "radiography",
+    "radiologist", "radiology", "radiotherapy", "readily", "receiving", "reception", "reconstitution", "record", "recovery", "refraction", "refuge", "registration", "rehab", "rehabilitation",
+    "relokasi", "reporting", "reprocessor", "reproductive", "respiratory", "respite", "resusitasi", "retail", "robotic", "room", "rooming-in", "rooms", "sample", "satellite", "scanner", "scientific",
+    "scn", "scope", "screen", "screening", "second", "sensory", "serum", "server", "services", "settlement", "seventh", "silent", "simulator", "single", "single-bedded", "sister", "sixth", "sleep",
+    "sluice", "society", "soiled", "special", "specialist", "specialists", "speech", "splinting", "sports", "staff", "stair", "station", "sterilization", "storage", "store", "stress", "stretcher",
+    "study", "sub", "suite", "supervisor", "supply", "support", "surgery", "surgical", "table", "taking", "tea", "teaching", "technical", "tenth", "test", "theatre", "therapy", "third", "three",
+    "three-bedded", "times", "to", "toilet", "topical", "tower", "traction", "training", "treadmill", "treadmills", "treatment", "triage", "trolley", "ultrasound", "uro-gynaecology", "uroflowmetry",
+    "utility", "vacant", "vascular", "vertigo", "vestibular", "vision", "visiting", "visitor", "visual", "volunteer", "wait", "waiting", "ward", "waste", "wax", "wheelchair", "wing", "with", "women's",
+    "work", "x-ray", "airlock", "auditory", "autologous", "baby", "basis", "brainstem", "breast", "cancers", "cell", "chamber", "clinically", "committee", "disabled", "electrophysiology", "endocrine", "enhancement",
+    "ethical", "execute", "formula", "green", "hearing", "hyperbaric", "immune", "institutional", "main", "marketing", "multiplace", "nourishment", "only", "oxygen", "policies", "procedures", "progress",
+    "protocol", "proven", "psychiatric", "ramp", "red", "response", "standard", "stem", "therapeutic", "trial", "value", "wardrobe", "yellow", "zone", "gynae-oncology", "pet/ct", "spect/ct/pet", "west", "sterile", "bedroom"
 }
 
 # --- Extract Text and Lists Helper ---
