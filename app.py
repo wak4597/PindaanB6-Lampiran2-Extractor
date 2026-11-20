@@ -15,7 +15,7 @@ BOLD_TERMS = [
     r"Diperakui",
     r"Tidak dapat dipertimbangkan",
     r"kepada",
-    r"Butiran Peluasan atau Pengubahan
+    r"Butiran Peluasan atau Pengubahan"
 ]
 
 CUSTOM_ENGLISH_WORDS = {
